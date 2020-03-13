@@ -4,7 +4,9 @@
   "description": "",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon -L index.js",
+    "client": "cd client && cd react-front-end && npm start",
+    "dev": "concurrently \"nodemon -L index.js\" \"cd client && cd react-frontend && npm start\" "
   },
   "keywords": [],
   "author": "",
@@ -13,8 +15,11 @@
     "grunt": "^1.0.4"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "mongoose": "^5.9.4"
   }
 }
