@@ -10,7 +10,7 @@ const dbProduct = require('./models/products.js');
 const User = require('./models/users.js');
 const Products = require('./models/products.js');
 
-const port = 5000;
+const port = 3000;
 
 app.use(express.static('public'));//all files from public folder must be included - static means we are not going to change them .
 // app.use('/bootstrap',express.static(path.join(__dirname,'../mongodb-frontend/node_modules/bootstrap/dist')));
